@@ -4,13 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mokshit Jain | Web Develeoper">
+  <meta name="keywords"
+    content="Mokshit Jain, Mokshit, Mokshit Jain Montfort School, Mokshit Montfort School, Mokshit Jain Converge Clan, Mokshit Converge Clan">
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"
     integrity="sha256-KkbZmx6FZVSEtoV2osxWijO2la7keAhUtFPsV0IPkv8=" crossorigin="anonymous" />
   <link rel="icon" href="./assets/logo.svg">
   <script defer src="./js/app.js"></script>
+
   <title>Home | Mokshit Jain</title>
 </head>
 
@@ -30,15 +35,14 @@
       <li><a href="#about">about me</a></li>
       <li><a href="#projects">projects</a></li>
       <li><a href="#contact">contact</a></li>
-      <li id="modeToggle"><i class="fa faw fa-moon-o"></i></li>
+      <li id="modeToggle"><i class="fa fa-moon-o"></i></li>
     </ul>
   </div>
 
   <div class="content">
     <section id="home">
-      <!-- <div class="triangle"></div> -->
       <div class="bg">
-        <img src="./assets/triangle.svg" class="triangle">
+        <img src="./assets/triangle.svg" alt="background" class="triangle">
         <div class="content-inner">
           <div class="description">
             <p>Hello, I'm</p>
@@ -46,13 +50,13 @@
             <p class="info">Web Designer and Programmer</p>
             <div class="social">
               <a href="http://github.com/Mokshit06" target="_blank" rel="noopener noreferrer"><i
-                  class="fa faw fa-github"></i></a>
+                  class="fa  fa-github"></i></a>
               <a href="http://instagram.com/mokshitxjain" target="_blank" rel="noopener noreferrer"><i
-                  class="fa faw fa-instagram"></i></a>
+                  class="fa  fa-instagram"></i></a>
               <a href="http://drupal.org/u/mokshit06" target="_blank" rel="noopener noreferrer"><i
-                  class="fa faw fa-drupal"></i></a>
+                  class="fa  fa-drupal"></i></a>
               <a href="http://twitter.com/mokshit06" target="_blank" rel="noopener noreferrer"><i
-                  class="fa faw fa-twitter"></i></a>
+                  class="fa  fa-twitter"></i></a>
             </div>
           </div>
           <div class="code">
@@ -65,7 +69,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
                 } <br><br>
                 const <b>Me</b> = new Person( '<b>Mokshit Jain</b>', ['<b>Designer</b>', '<b>Developer</b>'],
-                <b>2006</b> )</p>
+                <b>2006</b> );</p>
             </div>
           </div>
         </div>
@@ -73,7 +77,7 @@
     </section>
 
     <section id="about">
-      <h2 class="about-header">About Me</h2>
+      <h2 class="header">About Me</h2>
       <div class="about-bg"></div>
       <div class="about-content">
         <p>Hi, I'm Mokshit, a 13 year old tech enthusiast, designer and developer from India. I love to solve coding
@@ -85,10 +89,10 @@
     </section>
 
     <section id="skills">
-      <h2 class="skills-header">My Skills</h2>
+      <h2 class="header">My Skills</h2>
       <div class="skills-icons">
-        <i class="fa faw fa-html5"></i>
-        <i class="fa faw fa-css3"></i>
+        <i class="fa fa-html5"></i>
+        <i class="fa fa-css3"></i>
         <i class="icon-javascript-alt"></i>
         <i class="icon-nodejs"></i>
       </div>
@@ -106,10 +110,70 @@
         </div>
       </div>
     </section>
+
+    <section id="projects">
+      <h2 class="header">Projects</h2>
+
+      <div class="project-cover">
+        <div class="project">
+          <div class="info-bg">
+            <div class="project-info">
+              <h2>My Personal Website</h2>
+              <p>I wanted to make my personal website a fully responsive and static website. It took me around 1-2 weeks
+                to come up with this design. First I thought of making this website in React since I wasn't that good at
+                React, I made it in normal HTML and CSS. I decided on using keeping the UI simple but interactive at the
+                same time</p>
+              <div class="project-links">
+                <a href="https://mokshitjain.com" class="demo" target="_blank" rel="noopener noreferrer">Live
+                  Demo</a>
+                <a href="//github.com/Mokshit06/web-portfolio" target="_blank" class="github"
+                  rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="img-1"></div>
+            <div class="languages">
+              <i class="fa fa-html5"></i>
+              <i class="fa fa-css3"></i>
+              <i class="icon-javascript-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-cover">
+        <div class="project">
+          <div class="info-bg">
+            <div class="project-info">
+              <h2>Hover Chat</h2>
+              <p>Hover Chat is a chat application built using Node.js and Socket.io. Users can private create rooms and
+                share their location and send each other messages. It is currently being worked on.</p>
+              <div class="project-links">
+                <a href="https://hover-chat.herokuapp.com" class="demo" target="_blank" rel="noopener noreferrer">Live
+                  Demo</a>
+                <a href="//github.com/Mokshit06/hover-chat" target="_blank" class="github" rel="noopener noreferrer"><i
+                    class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="img-2"></div>
+            <div class="languages">
+              <i class="fa fa-html5"></i>
+              <i class="fa fa-css3"></i>
+              <i class="icon-javascript-alt"></i>
+              <i class="icon-nodejs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <footer>
-    <p>Made with ❤ by <a href="https://github.com/Mokshit06">Mokshit Jain</a></p>
-    <p>You can find the source code <a href="https://github.com/Mokshit06/web-portfolio">here</a></p>
+    <p>Made with ❤ by <a href="https://github.com/Mokshit06" target="_blank" rel="noopener noreferrer">Mokshit Jain</a>
+    </p>
+    <p>You can find the source code <a href="https://github.com/Mokshit06/web-portfolio" target="_blank"
+        rel="noopener noreferrer">here</a></p>
   </footer>
 </body>
 

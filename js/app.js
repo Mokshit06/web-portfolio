@@ -7,6 +7,7 @@ window.addEventListener('load', () => {
   const theme = localStorage.getItem('theme')
   if (theme === 'light') {
     btnToggle.classList.add('fa-sun-o')
+    btnToggle.style.padding = '4px 3.8px'
     btnToggle.classList.remove('fa-moon-o')
     document.querySelector('body').classList.add(theme)
   }
@@ -23,11 +24,13 @@ hamburger.addEventListener('click', () => {
 btnToggle.addEventListener('click', () => {
   if (btnToggle.classList.contains('fa-moon-o')) {
     btnToggle.classList.add('fa-sun-o')
+    btnToggle.style.padding = '4px 3.8px'
     btnToggle.classList.remove('fa-moon-o')
     localStorage.setItem('theme', 'light')
   } else {
     btnToggle.classList.add('fa-moon-o')
     btnToggle.classList.remove('fa-sun-o')
+    btnToggle.style.padding = '4px 5px'
     localStorage.clear()
   }
   document.querySelector('body').classList.toggle('light')
