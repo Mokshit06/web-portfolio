@@ -55,6 +55,8 @@ b {
   --shadow: none;
   --icon-bg: rgba(85, 85, 85, 0.432);
   --gradient: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+  --gradient-light: linear-gradient(99deg, #6a98f0 0%, #4961dc 130%);
+  --input: #f0f0f0;
 }
 
 .light {
@@ -66,7 +68,8 @@ b {
   --dark: #f8f8f8;
   --light-purple: #f8f8f8;
   --shadow: -1px 3px 12px 0px #8b8b8b21;
-  --icon-bg: rgba(209, 209, 209, 0.397);
+  --icon-bg: rgba(209, 209, 209, 0.233);
+  --input: #eeeeee;
 }
 
 #navbar {
@@ -116,7 +119,7 @@ b {
 #modeToggle {
   cursor: pointer;
   color: #f8f8f8;
-  background: var(--purple);
+  background: var(--gradient);
   border-radius: 50%;
   font-size: 1.3rem;
   font-weight: 900;
@@ -128,7 +131,8 @@ b {
 }
 
 #modeToggle:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
+  background: var(--gradient-light);
 }
 
 #home {
@@ -173,17 +177,18 @@ b {
   text-transform: uppercase;
 }
 
-.social .fa {
+.social i {
   color: var(--purple);
   font-size: 27px !important;
   border-radius: 50%;
-  padding: 9px;
+  padding: 7px;
   transition: 300ms;
 }
 
-.social .fa:hover {
-  transform: scale(1.2);
+.social i:hover {
   background: var(--icon-bg);
+  transform: scale(1.12);
+  padding: 6px;
 }
 
 .social {
@@ -208,9 +213,13 @@ b {
 .class p {
   color: var(--light);
   font-weight: 400;
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  font-family: 'Montserrat';
+  line-height: 1.8;
+}
+
+.class b {
+  font-weight: 700;
 }
 
 #about {
@@ -230,7 +239,7 @@ b {
   position: absolute;
   left: 0px;
   width: 100%;
-  min-height: 360px;
+  min-height: 381px;
   transform: skewY(-3deg);
   z-index: -1;
   pointer-events: none;
@@ -242,7 +251,7 @@ b {
   justify-content: space-between;
   align-items: center;
   padding: 0 120px;
-  margin-top: 210px;
+  margin-top: 185px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -403,6 +412,11 @@ b {
   margin-right: 10px;
 }
 
+.project-links .demo:hover {
+  transform: scale(1.05);
+  background: var(--gradient-light);
+}
+
 .project-links .github {
   color: #f8f8f8;
   font-size: 20px;
@@ -412,6 +426,11 @@ b {
   transition: all 200ms ease;
   border-radius: 50%;
   line-height: 0;
+}
+
+.project-links .github:hover {
+  transform: scale(1.1);
+  background: var(--gradient-light);
 }
 
 .img-container {
@@ -462,6 +481,139 @@ b {
   font-size: 22px;
 }
 
+#contact {
+  position: relative;
+}
+
+.contact-area {
+  width: calc(100% - 30px);
+  position: relative;
+  height: 400px;
+  margin-bottom: 50px;
+  margin-top: 150px;
+  background: var(--gradient);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin-left: 9%;
+  color: #f8f8f8;
+  width: fit-content;
+}
+
+.hand i {
+  font-size: 5.4rem;
+}
+
+.hand h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.hand p {
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form {
+  position: absolute;
+  width: 70%;
+  top: -50px;
+  right: -40px;
+  min-height: 400px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'email name' 'textarea textarea' '. button';
+  padding: 50px 30px;
+  background: var(--grey);
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.contact-form .email {
+  grid-area: email / email / email / email;
+}
+
+.contact-form .name {
+  grid-area: name / name / name / name;
+}
+
+.contact-form .message {
+  grid-area: textarea / textarea / textarea / textarea;
+}
+
+.contact-form .form-btn {
+  justify-self: end;
+  width: fit-content;
+  grid-area: button / button / button / button;
+  color: #f8f8f8;
+  height: auto;
+  font-size: 14px;
+  background: var(--gradient);
+  border: none;
+  transition: all 300ms ease;
+  padding: 13px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.contact-form .form-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.contact-form .form-btn:hover {
+  transform: scale(1.05);
+  background: var(--gradient-light);
+}
+
+.contact-form .invalid {
+  border: 1px solid #ff2121;
+}
+
+.contact-form .error {
+  background: linear-gradient(134deg, #ff4848 0%, #dc4949 99%);
+}
+
+.contact-form span {
+  font-size: 0.9em;
+  color: var(--head-light);
+}
+
+.contact-form input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  background: var(--input);
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0px;
+}
+
+.contact-form textarea {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--input);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 100%;
+  line-height: 1.5;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  margin: 10px 0px;
+}
+
 footer {
   min-height: 13vh;
   background: var(--gradient-grey);
@@ -484,6 +636,9 @@ footer a {
 }
 
 @media screen and (max-width: 1000px) {
+  .about-content {
+    margin-top: 150px;
+  }
   .info-bg {
     min-height: unset;
     grid-column: 1 / 4;
@@ -504,12 +659,22 @@ footer a {
   .img-container .languages {
     display: none;
   }
+  .contact-area {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+  }
+  .contact-area .hand {
+    display: none;
+  }
+  .contact-area .contact-form {
+    position: static;
+    width: 100%;
+    padding: 30px 25px;
+  }
 }
 
 @media screen and (max-width: 990px) {
-  .about-content {
-    margin-top: 190px;
-  }
   .skills-bg-text {
     display: none;
   }
@@ -531,11 +696,21 @@ footer a {
     font-size: 1.1rem;
   }
   .content {
-    margin: 0 auto 200px;
+    margin: 0 auto 190px;
   }
 }
 
 @media screen and (max-width: 850px) {
+  .social .fa {
+    font-size: 24px !important;
+    border-radius: 50%;
+    padding: 7px;
+    transition: 300ms;
+  }
+  .social .fa:hover {
+    transform: scale(1.2);
+    background: var(--icon-bg);
+  }
   .nav-links {
     width: 50%;
   }
@@ -560,7 +735,8 @@ footer a {
     font-size: 0.9rem;
   }
   .about-content {
-    margin-top: 170px;
+    margin-top: 140px;
+    padding: 0 80px;
   }
 }
 
@@ -664,11 +840,11 @@ footer a {
   }
   .about-content {
     flex-direction: column;
-    margin-top: 137px;
+    margin-top: 130px;
     padding: 0;
   }
   .about-content p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   footer {
     min-height: 10vh;
@@ -682,5 +858,8 @@ footer a {
   }
   #modeToggle {
     font-size: 2.2rem;
+  }
+  .contact-form {
+    grid-template-areas: 'email email' 'name name' 'textarea textarea' '. button';
   }
 }
