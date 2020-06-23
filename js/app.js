@@ -12,6 +12,7 @@ email.addEventListener('blur', validateEmail);
 name.addEventListener('blur', validateName);
 msg.addEventListener('blur', validateMessage);
 
+// Get theme
 window.addEventListener('load', () => {
   const theme = localStorage.getItem('theme');
   if (theme === 'light') {
@@ -22,6 +23,7 @@ window.addEventListener('load', () => {
   }
 });
 
+// Navbar
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
   links.forEach(link => {
@@ -30,6 +32,13 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('toggle');
 });
 
+// Get projects
+(async () => {
+  const header = document.querySelector('#projects .header');
+  header.insertAdjacentHTML('afterend', await getProjects());
+})();
+
+// Light to Dark theme
 btnToggle.addEventListener('click', () => {
   if (btnToggle.classList.contains('fa-moon-o')) {
     btnToggle.classList.add('fa-sun-o');
@@ -45,6 +54,7 @@ btnToggle.addEventListener('click', () => {
   document.querySelector('body').classList.toggle('light');
 });
 
+// Change the title according to the link
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     const regex = /\/#[\w+]+/;
@@ -55,16 +65,18 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
+// Validate the name field
 function validateName() {
   if (name.value === '') {
     name.classList.add('invalid');
     submitBtn.disabled = true;
   } else {
     name.classList.remove('invalid');
-    submitBtn.disabled = false;
+    checkInput();
   }
 }
 
+// Validate the email field
 function validateEmail() {
   const re = /^([A-Za-z0-9\_\-.]+)@([A-Za-z0-9]+)\.([a-z]{2,5})$/;
 
@@ -73,20 +85,35 @@ function validateEmail() {
     submitBtn.disabled = true;
   } else {
     email.classList.remove('invalid');
-    submitBtn.disabled = false;
+    checkInput();
   }
 }
 
+// Validate the message field
 function validateMessage() {
   if (msg.value === '') {
     msg.classList.add('invalid');
     submitBtn.disabled = true;
   } else {
     msg.classList.remove('invalid');
+    checkInput();
+  }
+}
+
+// Check if any input is empty
+function checkInput() {
+  const totalValues = [name.value, msg.value, email.value];
+
+  const invalidInput = totalValues.some(value => value === '');
+
+  if (invalidInput === true) {
+    submitBtn.disabled = true;
+  } else {
     submitBtn.disabled = false;
   }
 }
 
+// Form submit
 form.addEventListener('submit', e => {
   e.preventDefault();
   const service_id = 'sendgrid';
@@ -112,3 +139,46 @@ form.addEventListener('submit', e => {
     }
   );
 });
+
+// Get projects from json
+async function getProjects() {
+  const projectsJson = await fetch('projects.json');
+  const projects = await projectsJson.json();
+  let html = '';
+  projects.forEach(project => {
+    const { name, info, image, demoLink, githubLink, languages } = project;
+
+    html += `
+      <div class="project-cover">
+        <div class="project">
+          <div class="info-bg">
+            <div class="project-info">
+              <h2>${name}</h2>
+              <p>${info}</p>
+              <div class="project-links">
+              ${
+                demoLink
+                  ? `<a href="https://${demoLink}.com" class="demo" target="_blank" rel="noopener noreferrer">Live
+                  Demo</a>`
+                  : ''
+              }
+                <a href="https://github.com/Mokshit06/${githubLink}" target="_blank" class="github" rel="noopener noreferrer"><i
+                    class="fa fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="img" style="background-image: url('../assets/images/${image}.webp')"></div>
+            <div class="languages">
+              ${languages
+                .map(language => `<i class="${language}"></i>`)
+                .join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  return html;
+}

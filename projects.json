@@ -1,0 +1,48 @@
+[
+  {
+    "name": "My Website",
+    "info": "I wanted to make my personal website a fully responsive and static website. I wanted a place to show my projects and what I was upto. I decided on using keeping the UI simple but interactive at the same time. It took me around 1 week to develop what you see here.",
+    "image": "portfolio",
+    "demoLink": "mokshitjain",
+    "githubLink": "web-portfolio",
+    "languages": [
+      "fa fa-html5",
+      "fa fa-css3",
+      "icon-javascript-alt"
+    ]
+  },
+  {
+    "name": "Hover Chat",
+    "info": "Hover Chat is a chat application built using Node.js and Socket.io. Users can private create rooms and share their location and send each other messages. It is currently being worked on.",
+    "image": "hover-chat",
+    "demoLink": "hover-chat.herokuapp",
+    "githubLink": "hover-chat",
+    "languages": [
+      "fa fa-html5",
+      "fa fa-css3",
+      "icon-javascript-alt",
+      "icon-nodejs"
+    ]
+  },
+  {
+    "name": "Task Manager API",
+    "info": "This is a Node.js and MongoDB CRUD API which can be used for a task manager app. It can create, update and delete user accounts and their tasks. It uses JSON web tokens for authentication and also sends emails to users on sign up.",
+    "image": "task-manager",
+    "demoLink": "task-management-api.herokuapp",
+    "githubLink": "task-manager-api",
+    "languages": [
+      "icon-mongodb",
+      "icon-javascript-alt",
+      "icon-nodejs"
+    ]
+  },
+  {
+    "name": "Prisma Assistant",
+    "info": "Prisma is a voice assistant made using Python. It uses Google Speech API to recogonise speech and answer simple queries, search on google and youtube, take screenshots, do simple math and play rock, paper, scissors. It is one of my first Python apps.",
+    "image": "assistant",
+    "githubLink": "prisma-assistant",
+    "languages": [
+      "icon-python"
+    ]
+  }
+]
