@@ -3,7 +3,7 @@
     "name": "My Website",
     "info": "I wanted to make my personal website a fully responsive and static website. I wanted a place to show my projects and what I was upto. I decided on using keeping the UI simple but interactive at the same time. It took me around 1 week to develop what you see here.",
     "image": "portfolio",
-    "demoLink": "mokshitjain",
+    "demoLink": "https://mokshitjain",
     "githubLink": "web-portfolio",
     "languages": [
       "fa fa-html5",
@@ -15,7 +15,7 @@
     "name": "Hover Chat",
     "info": "Hover Chat is a chat application built using Node.js and Socket.io. Users can private create rooms and share their location and send each other messages. It is currently being worked on.",
     "image": "hover-chat",
-    "demoLink": "hover-chat.herokuapp",
+    "demoLink": "https://hover-chat.herokuapp",
     "githubLink": "hover-chat",
     "languages": [
       "fa fa-html5",
@@ -25,15 +25,15 @@
     ]
   },
   {
-    "name": "Task Manager API",
-    "info": "This is a Node.js and MongoDB CRUD API which can be used for a task manager app. It can create, update and delete user accounts and their tasks. It uses JSON web tokens for authentication and also sends emails to users on sign up.",
-    "image": "task-manager",
-    "demoLink": "task-management-api.herokuapp",
-    "githubLink": "task-manager-api",
+    "name": "Github Finder",
+    "info": "Github Finder is an application which presents your Github profile in a better way. It fetches data from the Github API and displays it using Chart.js in the form of charts",
+    "image": "github",
+    "demoLink": "http://github-finder.mokshitjain",
+    "githubLink": "github-finder",
     "languages": [
-      "icon-mongodb",
-      "icon-javascript-alt",
-      "icon-nodejs"
+      "fa fa-html5",
+      "fa fa-css3",
+      "icon-javascript-alt"
     ]
   },
   {

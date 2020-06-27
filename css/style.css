@@ -44,6 +44,10 @@ b {
   font-weight: 700;
 }
 
+i {
+  font-display: swap;
+}
+
 :root {
   --white: #f8f8f8;
   --light: #f8f8f8;
@@ -243,7 +247,7 @@ b {
   color: var(--light);
   font-weight: 400;
   font-size: 0.9rem;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.8;
 }
 
@@ -655,6 +659,7 @@ b {
   line-height: 1.5;
   background: var(--input);
   width: 100%;
+  outline: none;
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
@@ -662,6 +667,7 @@ b {
 }
 
 .contact-form textarea {
+  outline: none;
   font-family: 'Montserrat', sans-serif;
   background: var(--input);
   padding: 10px 15px;

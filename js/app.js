@@ -158,7 +158,7 @@ async function getProjects() {
               <div class="project-links">
               ${
                 demoLink
-                  ? `<a href="https://${demoLink}.com" class="demo" target="_blank" rel="noopener noreferrer">Live
+                  ? `<a href="${demoLink}.com" class="demo" target="_blank" rel="noopener noreferrer">Live
                   Demo</a>`
                   : ''
               }
