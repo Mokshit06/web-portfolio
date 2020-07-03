@@ -25,6 +25,19 @@
     ]
   },
   {
+    "name": "BlogScape",
+    "info": "BlogScape is a blogging site built using Node.js and MongoDB where users can log in using theit Google accounts and create public and private blogs, see other users' blogs and like them.",
+    "image": "blogscape",
+    "demoLink": "https://blogscape.herokuapp",
+    "githubLink": "blog-scape",
+    "languages": [
+      "fa fa-html5",
+      "fa fa-css3",
+      "icon-javascript-alt",
+      "icon-nodejs"
+    ]
+  },
+  {
     "name": "Github Finder",
     "info": "Github Finder is an application which presents your Github profile in a better way. It fetches data from the Github API and displays it using Chart.js in the form of charts",
     "image": "github",
