@@ -29,6 +29,27 @@ body {
   transition: 300ms ease-in-out;
 }
 
+.no-script {
+  height: 87vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.no-script noscript {
+  font-size: 1.3rem;
+  background: #232323;
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+
 p {
   font-size: 16px;
 }
@@ -753,6 +774,13 @@ footer a {
 }
 
 @media screen and (max-width: 990px) {
+  .no-script {
+    height: 88.5vh;
+  }
+  .no-script noscript {
+    padding: 40px;
+    font-size: 1.1rem;
+  }
   .skills-bg-text {
     display: none;
   }
@@ -768,7 +796,7 @@ footer a {
     font-size: 60px;
   }
   footer {
-    min-height: 12vh;
+    min-height: 11.5vh;
   }
   footer p {
     font-size: 1.1rem;
@@ -835,6 +863,17 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
+  .no-script {
+    width: 85%;
+    margin: 0 auto;
+    height: 90vh;
+  }
+  .no-script noscript {
+    text-align: center;
+    padding: 30px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
   .content {
     width: 90%;
   }
@@ -973,5 +1012,15 @@ footer a {
   }
   .contact-form {
         grid-template-areas: 'email email' 'name name' 'textarea textarea' '. button';
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .no-script {
+    height: 89vh;
+    width: 80%;
+  }
+  .no-script noscript {
+    padding: 25px;
   }
 }

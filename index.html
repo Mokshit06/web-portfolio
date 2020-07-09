@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"
     integrity="sha256-KkbZmx6FZVSEtoV2osxWijO2la7keAhUtFPsV0IPkv8=" crossorigin="anonymous" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
   <script>
     (function () {
@@ -26,130 +27,138 @@
 
 <body>
 
-  <div id="navbar">
-    <div class="hamburger">
-      <div class="line-1"></div>
-      <div class="line-2"></div>
-      <div class="line-3"></div>
-    </div>
-    <div class="logo">
-      <img src="./assets/logo.svg" alt="Logo">
-    </div>
-    <ul class="nav-links">
-      <li><a href="#home">home</a></li>
-      <li><a href="#about">about me</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#contact">contact</a></li>
-      <li id="modeToggle"><i class="fa fa-moon-o"></i></li>
-    </ul>
+  <div class="no-script">
+    <noscript>
+      Kindly enable Javascript in your browser to view this website
+    </noscript>
   </div>
 
-  <div class="content">
-    <section id="home">
-      <div class="bg">
-        <img src="./assets/triangle.svg" alt="background" class="triangle">
-        <div class="content-inner">
-          <div class="description">
-            <p>Hello, I'm</p>
-            <h1>MOKSHIT JAIN</h1>
-            <p class="info">Web Designer and Programmer</p>
-            <div class="social">
-              <a href="http://github.com/Mokshit06" target="_blank" rel="noopener noreferrer"><i
-                  class="fa  fa-github"></i></a>
-              <a href="http://instagram.com/mokshitxjain" target="_blank" rel="noopener noreferrer"><i
-                  class="fa  fa-instagram"></i></a>
-              <a href="http://drupal.org/u/mokshit06" target="_blank" rel="noopener noreferrer"><i
-                  class="fa  fa-drupal"></i></a>
-              <a href="http://twitter.com/mokshit06" target="_blank" rel="noopener noreferrer"><i
-                  class="fa  fa-twitter"></i></a>
+  <div class="site-content" style="display: none;">
+    <div id="navbar">
+      <div class="hamburger">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </div>
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about me</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li id="modeToggle"><i class="fa fa-moon-o"></i></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <section id="home">
+        <div class="bg">
+          <img src="./assets/triangle.svg" alt="background" class="triangle">
+          <div class="content-inner">
+            <div class="description">
+              <p>Hello, I'm</p>
+              <h1>MOKSHIT JAIN</h1>
+              <p class="info">Web Designer and Programmer</p>
+              <div class="social">
+                <a href="http://github.com/Mokshit06" target="_blank" rel="noopener noreferrer"><i
+                    class="fa  fa-github"></i></a>
+                <a href="http://instagram.com/mokshitxjain" target="_blank" rel="noopener noreferrer"><i
+                    class="fa  fa-instagram"></i></a>
+                <a href="http://drupal.org/u/mokshit06" target="_blank" rel="noopener noreferrer"><i
+                    class="fa  fa-drupal"></i></a>
+                <a href="http://twitter.com/mokshit06" target="_blank" rel="noopener noreferrer"><i
+                    class="fa  fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="code">
+              <div class="class">
+                <p>class <b>Person</b> {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;constructor (name, quirks, birthYear) {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.quirks = quirks;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = new Date().getFullYear() - birthYear;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                  } <br><br>
+                  const <b>Me</b> = new Person( '<b>Mokshit Jain</b>', ['<b>Designer</b>', '<b>Developer</b>'],
+                  <b>2006</b> );</p>
+              </div>
             </div>
           </div>
-          <div class="code">
-            <div class="class">
-              <p>class <b>Person</b> {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;constructor (name, quirks, birthYear) {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.quirks = quirks;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = new Date().getFullYear() - birthYear;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                } <br><br>
-                const <b>Me</b> = new Person( '<b>Mokshit Jain</b>', ['<b>Designer</b>', '<b>Developer</b>'],
-                <b>2006</b> );</p>
-            </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 class="header">About Me</h2>
+        <div class="about-bg"></div>
+        <div class="about-content">
+          <p>Hi, I'm Mokshit, a 14 year old tech enthusiast, designer and developer from India. I am proficient in
+            Javascript, Node.js and Express.js. I'm currently learning Vue.js.
+            <br><br>
+            I can design and develop beautiful websites and user interfaces, create real-time applications and robust
+            backend APIs. I can also learn new concepts fast enough to deliver high quality results on time.<br><br>
+            I am also familiar with technologies like Git (Github) and Content Management Systems like Drupal. I also
+            love
+            to contribute to Open Source.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="header">My Skills</h2>
+        <div class="skills-icons">
+          <i class="fa fa-html5"></i>
+          <i class="fa fa-css3"></i>
+          <i class="icon-javascript-alt"></i>
+          <i class="icon-nodejs"></i>
+        </div>
+        <div class="skills-bg-text">
+          <div class="skills-bg-text-inner">
+            <p>HTML</p>
+            <p>Javascript</p>
+            <p>Git</p>
+            <p>Node.js</p>
+            <p>Mongoose</p>
+            <p>MongoDB</p>
+            <p>Express.js</p>
+            <p>CSS3</p>
+            <p>Drupal</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about">
-      <h2 class="header">About Me</h2>
-      <div class="about-bg"></div>
-      <div class="about-content">
-        <p>Hi, I'm Mokshit, a 13 year old tech enthusiast, designer and developer from India. I love to solve coding
-          problems and build products that people want. I am proficient in Javascript, Node.js and Express.js.
-          <br><br>
-          I can design and develop beautiful websites and user interfaces, create real-time applications and robust
-          backend APIs. I can also learn new concepts fast enough to deliver high quality results on time.<br><br>
-          I am also familiar with technologies like Git (Github) and Content Management Systems like Drupal. I also love
-          to contribute to Open Source.
-        </p>
-      </div>
-    </section>
+      <section id="projects">
+        <h2 class="header">Projects</h2>
+      </section>
 
-    <section id="skills">
-      <h2 class="header">My Skills</h2>
-      <div class="skills-icons">
-        <i class="fa fa-html5"></i>
-        <i class="fa fa-css3"></i>
-        <i class="icon-javascript-alt"></i>
-        <i class="icon-nodejs"></i>
-      </div>
-      <div class="skills-bg-text">
-        <div class="skills-bg-text-inner">
-          <p>HTML</p>
-          <p>Javascript</p>
-          <p>Git</p>
-          <p>Node.js</p>
-          <p>Mongoose</p>
-          <p>MongoDB</p>
-          <p>Express.js</p>
-          <p>CSS3</p>
-          <p>Drupal</p>
+      <section id="contact">
+        <h2 class="header">Get in Touch</h2>
+        <div class="contact-area">
+          <div class="hand">
+            <i class="fa fa-handshake-o"></i>
+            <h3>Thank You</h3>
+            <p>Want to collaborate?</p>
+          </div>
+          <form class="contact-form">
+            <label class="email">
+              <span>Email</span>
+              <input type="email" id="email" placeholder="example@gmail.com" name="email" required>
+            </label>
+            <label class="name">
+              <span>Name</span>
+              <input type="text" id="name" placeholder="John Doe" name="name" required>
+            </label>
+            <label class="message">
+              <span>Message</span>
+              <textarea id="message" placeholder="Hey there!" name="message" required></textarea>
+            </label>
+            <button disabled class="form-btn"><i class="fa fa-paper-plane"></i>&nbsp; Submit</button>
+          </form>
         </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2 class="header">Projects</h2>
-    </section>
-
-    <section id="contact">
-      <h2 class="header">Get in Touch</h2>
-      <div class="contact-area">
-        <div class="hand">
-          <i class="fa fa-handshake-o"></i>
-          <h3>Thank You</h3>
-          <p>Want to collaborate?</p>
-        </div>
-        <form class="contact-form">
-          <label class="email">
-            <span>Email</span>
-            <input type="email" id="email" placeholder="example@gmail.com" name="email" required>
-          </label>
-          <label class="name">
-            <span>Name</span>
-            <input type="text" id="name" placeholder="John Doe" name="name" required>
-          </label>
-          <label class="message">
-            <span>Message</span>
-            <textarea id="message" placeholder="Hey there!" name="message" required></textarea>
-          </label>
-          <button disabled class="form-btn"><i class="fa fa-paper-plane"></i>&nbsp; Submit</button>
-        </form>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
-
   <footer>
     <br>
     <p>Made with ❤ by <a href="https://github.com/Mokshit06" target="_blank" rel="noopener noreferrer">Mokshit Jain</a>

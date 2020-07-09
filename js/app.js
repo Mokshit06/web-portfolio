@@ -1,4 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
+const siteContent = document.querySelector('.site-content');
+const noScript = document.querySelector('.no-script');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const btnToggle = document.querySelector('#modeToggle i');
@@ -12,8 +14,14 @@ email.addEventListener('blur', validateEmail);
 name.addEventListener('blur', validateName);
 msg.addEventListener('blur', validateMessage);
 
+// Lozad
+const observer = lozad();
+observer.observe();
+
 // Get theme
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
+  siteContent.style.display = 'block';
+  noScript.style.display = 'none';
   const theme = localStorage.getItem('theme');
   if (theme === 'light') {
     btnToggle.classList.add('fa-sun-o');
@@ -36,6 +44,7 @@ hamburger.addEventListener('click', () => {
 (async () => {
   const header = document.querySelector('#projects .header');
   header.insertAdjacentHTML('afterend', await getProjects());
+  observer.observe();
 })();
 
 // Light to Dark theme
@@ -168,7 +177,7 @@ async function getProjects() {
             </div>
           </div>
           <div class="img-container">
-            <div class="img" style="background-image: url('../assets/images/${image}.webp')"></div>
+            <div class="img lozad" data-background-image="../assets/images/${image}.webp"></div>
             <div class="languages">
               ${languages
                 .map(language => `<i class="${language}"></i>`)
