@@ -24,9 +24,9 @@ window.addEventListener('DOMContentLoaded', () => {
   noScript.style.display = 'none';
   const theme = localStorage.getItem('theme');
   if (theme === 'light') {
-    btnToggle.classList.add('fa-sun-o');
+    btnToggle.classList.add('fa-sun');
     btnToggle.style.padding = '4px 3.8px';
-    btnToggle.classList.remove('fa-moon-o');
+    btnToggle.classList.remove('fa-moon');
     document.querySelector('body').classList.add(theme);
   }
 });
@@ -49,14 +49,14 @@ hamburger.addEventListener('click', () => {
 
 // Light to Dark theme
 btnToggle.addEventListener('click', () => {
-  if (btnToggle.classList.contains('fa-moon-o')) {
-    btnToggle.classList.add('fa-sun-o');
+  if (btnToggle.classList.contains('fa-moon')) {
+    btnToggle.classList.add('fa-sun');
     btnToggle.style.padding = '4px 3.8px';
-    btnToggle.classList.remove('fa-moon-o');
+    btnToggle.classList.remove('fa-moon');
     localStorage.setItem('theme', 'light');
   } else {
-    btnToggle.classList.add('fa-moon-o');
-    btnToggle.classList.remove('fa-sun-o');
+    btnToggle.classList.add('fa-moon');
+    btnToggle.classList.remove('fa-sun');
     btnToggle.style.padding = '4px 5px';
     localStorage.clear();
   }
@@ -133,7 +133,7 @@ form.addEventListener('submit', e => {
       form.reset();
       submitBtn.innerHTML = 'Sent';
       setTimeout(() => {
-        submitBtn.innerHTML = '<i class="fa fa-paper-plane"></i>&nbsp;Submit';
+        submitBtn.innerHTML = '<i class="fab fa-paper-plane"></i>&nbsp;Submit';
       }, 2000);
     },
     err => {
@@ -141,7 +141,7 @@ form.addEventListener('submit', e => {
       submitBtn.innerHTML = 'Error';
       submitBtn.classList.add('error');
       setTimeout(() => {
-        submitBtn.innerHTML = '<i class="fa fa-paper-plane"></i>&nbsp;Submit';
+        submitBtn.innerHTML = '<i class="fab fa-paper-plane"></i>&nbsp;Submit';
         submitBtn.classList.remove('error');
       }, 2000);
       console.log(err);
@@ -172,7 +172,7 @@ async function getProjects() {
                   : ''
               }
                 <a href="https://github.com/Mokshit06/${githubLink}" target="_blank" class="github" rel="noopener noreferrer"><i
-                    class="fa fa-github"></i></a>
+                    class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@ async function getProjects() {
             <div class="img lozad" data-background-image="../assets/images/${image}.webp"></div>
             <div class="languages">
               ${languages
-                .map(language => `<i class="${language}"></i>`)
+                .map(language => `<i class="fab ${language}"></i>`)
                 .join('')}
             </div>
           </div>

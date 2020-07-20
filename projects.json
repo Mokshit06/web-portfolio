@@ -6,22 +6,21 @@
     "demoLink": "https://mokshitjain",
     "githubLink": "web-portfolio",
     "languages": [
-      "fa fa-html5",
-      "fa fa-css3",
-      "icon-javascript-alt"
+      "fa-html5",
+      "fa-css3",
+      "fa-js"
     ]
   },
   {
-    "name": "Hover Chat",
-    "info": "Hover Chat is a chat application built using Node.js and Socket.io. Users can private create rooms and share their location and send each other messages. It is currently being worked on.",
-    "image": "hover-chat",
-    "demoLink": "https://hover-chat.herokuapp",
-    "githubLink": "hover-chat",
+    "name": "Github Finder",
+    "info": "Github Finder is an website made using Vue.js. It presents your Github profile in a better way with user, language and repository stats.",
+    "image": "github",
+    "demoLink": "http://github.mokshitjain",
+    "githubLink": "github-finder",
     "languages": [
-      "fa fa-html5",
-      "fa fa-css3",
-      "icon-javascript-alt",
-      "icon-nodejs"
+      "fa-html5",
+      "fa-css3",
+      "fa-vuejs"
     ]
   },
   {
@@ -31,31 +30,30 @@
     "demoLink": "https://blogscape.herokuapp",
     "githubLink": "blog-scape",
     "languages": [
-      "fa fa-html5",
-      "fa fa-css3",
-      "icon-javascript-alt",
-      "icon-nodejs"
+      "fa-html5",
+      "fa-css3",
+      "fa-node-js"
     ]
   },
   {
-    "name": "Github Finder",
-    "info": "Github Finder is an application which presents your Github profile in a better way. It fetches data from the Github API and displays it using Chart.js in the form of charts",
-    "image": "github",
-    "demoLink": "http://github-finder.mokshitjain",
-    "githubLink": "github-finder",
+    "name": "Hover Chat",
+    "info": "Hover Chat is a chat application built using Node.js and Socket.io. Users can private create rooms and share their location and send each other messages. It is currently being worked on.",
+    "image": "hover-chat",
+    "demoLink": "https://hover-chat.herokuapp",
+    "githubLink": "hover-chat",
     "languages": [
-      "fa fa-html5",
-      "fa fa-css3",
-      "icon-javascript-alt"
+      "fa-html5",
+      "fa-css3",
+      "fa-node-js"
     ]
   },
   {
     "name": "Prisma Assistant",
-    "info": "Prisma is a voice assistant made using Python. It uses Google Speech API to recogonise speech and answer simple queries, search on google and youtube, take screenshots, do simple math and play rock, paper, scissors. It is one of my first Python apps.",
+    "info": "Prisma is a voice assistant made using Python. It uses Google Speech API to recogonise speech and answer simple queries, search on google and youtube, take screenshots, do simple math and play rock, paper, scissors.",
     "image": "assistant",
     "githubLink": "prisma-assistant",
     "languages": [
-      "icon-python"
+      "fa-python"
     ]
   }
 ]

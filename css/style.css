@@ -75,7 +75,7 @@ i {
   --head-light: #f8f8f8;
   --grey: #232323;
   --gradient-grey: #232323;
-  --skill-grey: #252525;
+  --skill-grey: #272727;
   --theme: #657cf1;
   --dark: #191919;
   --purple: #6d83f2;
@@ -160,20 +160,19 @@ i {
   color: var(--white);
   background: var(--gradient);
   border-radius: 50%;
-  font-size: 1.3rem;
+  font-size: 1.2em;
   font-weight: 900;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
 }
 
 #modeToggle i {
-  padding: 4px 5px;
+  padding: 5px;
 }
 
 #modeToggle:hover {
   -webkit-transform: scale(1.12);
           transform: scale(1.12);
-  background: var(--gradient-light);
 }
 
 #home {
@@ -229,15 +228,16 @@ i {
   font-size: 27px !important;
   border-radius: 50%;
   padding: 7px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
 }
 
 .social i:hover {
   background: var(--icon-bg);
-  -webkit-transform: scale(1.12);
-          transform: scale(1.12);
-  padding: 6px;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .social {
@@ -337,15 +337,9 @@ i {
   margin: 0 auto;
 }
 
-.skills-icons .fa {
+.skills-icons .fab {
   font-size: 86px;
   padding-top: 11px;
-  color: var(--purple);
-}
-
-.skills-icons .icon-javascript-alt,
-.skills-icons .icon-nodejs {
-  font-size: 100px;
   color: var(--purple);
 }
 
@@ -392,33 +386,33 @@ i {
 }
 
 .skills-bg-text-inner p:nth-child(5) {
+  top: 120px;
+  left: 22%;
+  font-size: 18px;
+}
+
+.skills-bg-text-inner p:nth-child(6) {
   top: 40px;
   left: 75%;
   font-size: 15px;
 }
 
-.skills-bg-text-inner p:nth-child(6) {
+.skills-bg-text-inner p:nth-child(7) {
   top: 380px;
   left: 85%;
   font-size: 18px;
 }
 
-.skills-bg-text-inner p:nth-child(7) {
+.skills-bg-text-inner p:nth-child(8) {
   top: 320px;
   left: 65%;
   font-size: 18px;
 }
 
-.skills-bg-text-inner p:nth-child(8) {
+.skills-bg-text-inner p:nth-child(9) {
   top: 350px;
   left: 150px;
   font-size: 20px;
-}
-
-.skills-bg-text-inner p:nth-child(9) {
-  top: 120px;
-  left: 22%;
-  font-size: 12px;
 }
 
 #projects {
@@ -546,11 +540,11 @@ i {
   font-size: 24px;
 }
 
-.languages i:not(.icon-nodejs) {
+.languages i:not(.fa-node-js) {
   margin-right: 14px;
 }
 
-.languages i.fa {
+.languages i.fab {
   margin-top: 3.4px;
   font-size: 22px;
 }
@@ -703,14 +697,14 @@ i {
 }
 
 footer {
-  min-height: 13vh;
+  min-height: 11vh;
   background: var(--gradient-grey);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -718,8 +712,8 @@ footer {
 }
 
 footer p {
-  line-height: 1.4;
-  font-size: 1.2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
   color: var(--white);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -788,12 +782,8 @@ footer a {
     width: 95%;
     margin-left: 15px;
   }
-  .skills-icons .fa {
+  .skills-icons .fab {
     font-size: 50px;
-  }
-  .skills-icons .icon-javascript-alt,
-  .skills-icons .icon-nodejs {
-    font-size: 60px;
   }
   footer {
     min-height: 11.5vh;
@@ -807,14 +797,14 @@ footer a {
 }
 
 @media screen and (max-width: 850px) {
-  .social .fa {
+  .social .fab {
     font-size: 24px !important;
     border-radius: 50%;
     padding: 7px;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  .social .fa:hover {
+  .social .fab:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     background: var(--icon-bg);
