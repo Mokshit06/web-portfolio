@@ -1,17 +1,5 @@
 [
   {
-    "name": "My Website",
-    "info": "I wanted to make my personal website a fully responsive and static website. I wanted a place to show my projects and what I was upto. I decided on using keeping the UI simple but interactive at the same time. It took me around 1 week to develop what you see here.",
-    "image": "portfolio",
-    "demoLink": "https://mokshitjain",
-    "githubLink": "web-portfolio",
-    "languages": [
-      "fa-html5",
-      "fa-css3",
-      "fa-js"
-    ]
-  },
-  {
     "name": "Github Finder",
     "info": "Github Finder is an website made using Vue.js. It presents your Github profile in a better way with user, language and repository stats.",
     "image": "github",
@@ -48,12 +36,14 @@
     ]
   },
   {
-    "name": "Prisma Assistant",
+    "name": "Shrinkr",
     "info": "Prisma is a voice assistant made using Python. It uses Google Speech API to recogonise speech and answer simple queries, search on google and youtube, take screenshots, do simple math and play rock, paper, scissors.",
-    "image": "assistant",
-    "githubLink": "prisma-assistant",
+    "image": "shrinkr",
+    "githubLink": "shrinkr",
     "languages": [
-      "fa-python"
+      "fa-javascript",
+      "fa-vuejs",
+      "fa-node-js"
     ]
   }
 ]
