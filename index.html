@@ -1,171 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<title>Mokshit Jain (@mokshit06)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mokshit Jain | Web Develeoper">
-  <meta name="keywords"
-    content="Mokshit Jain, Mokshit, Mokshit Jain Montfort School, Mokshit Montfort School, Mokshit Jain Converge Clan, Mokshit Converge Clan">
-  <link rel="icon" href="./assets/logo.svg">
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("user_F3Nu5GNW1WAaffnYFcYWk")
-    })()
-  </script>
-  <script defer src="./js/app.js"></script>
+<style>
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    line-height: 1.5;
+    font-family: Public Sans, system-ui;
+    border-top: 2px solid #6655ff;
+  }
 
-  <title>Home | Mokshit Jain</title>
-</head>
+  * {
+    box-sizing: border-box
+  }
 
-<body>
+  h1 {
+    font-size: 1rem;
+  }
 
-  <div class="no-script">
-    <noscript>
-      Kindly enable Javascript in your browser to view this website
-    </noscript>
-  </div>
+  h1>span {
+    font-weight: 400;
+    color: #666;
+  }
 
-  <div class="site-content" style="display: none;">
-    <div id="navbar">
-      <div class="hamburger">
-        <div class="line-1"></div>
-        <div class="line-2"></div>
-        <div class="line-3"></div>
-      </div>
-      <div class="logo">
-        <img src="./assets/logo.svg" alt="Logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about me</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#contact">contact</a></li>
-        <li id="modeToggle"><i class="far fa-moon"></i></li>
-      </ul>
-    </div>
+  img {
+    object-fit: cover;
+    margin: 10px;
+  }
 
-    <div class="content">
-      <section id="home">
-        <div class="bg">
-          <img src="./assets/triangle.svg" alt="background" class="triangle">
-          <div class="content-inner">
-            <div class="description">
-              <p>Hello, I'm</p>
-              <h1>MOKSHIT JAIN</h1>
-              <p class="info">Web Designer and Programmer</p>
-              <div class="social">
-                <a href="http://github.com/Mokshit06" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-github"></i></a>
-                <a href="http://instagram.com/mokshitxjain" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-instagram"></i></a>
-                <a href="http://drupal.org/u/mokshit06" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-drupal"></i></a>
-                <a href="http://twitter.com/mokshit06" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-twitter"></i></a>
-              </div>
-            </div>
-            <div class="code">
-              <div class="class">
-                <p>class <b>Person</b> {<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;constructor (name, skills, birthYear) {<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.skills = skills;<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = new Date().getFullYear() - birthYear;<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                  } <br><br>
-                  const <b>Me</b> = new Person( '<b>Mokshit Jain</b>', ['<b>Designer</b>', '<b>Developer</b>'],
-                  <b>2006</b> );</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  header {
+    display: flex;
+    align-items: center;
+  }
 
-      <section id="about">
-        <h2 class="header">About Me</h2>
-        <div class="about-bg"></div>
-        <div class="about-content">
-          <p>Hi, I'm Mokshit, a 15 year old tech enthusiast, designer and developer from India. I am proficient in
-            Javascript, Node.js and Express.js. I'm currently learning Vue.js.
-            <br><br>
-            I can design and develop beautiful websites and user interfaces, create real-time applications and robust
-            backend APIs. I can also learn new concepts fast enough to deliver high quality results on time.<br><br>
-            I am also familiar with technologies like Git (Github) and Content Management Systems like Drupal. I also
-            love
-            to contribute to Open Source.
-          </p>
-        </div>
-      </section>
+  a {
+    text-decoration: underline 2px #eaeaef;
+    text-underline-offset: 2px;
+    color: #6655ff;
+  }
 
-      <section id="skills">
-        <h2 class="header">My Skills</h2>
-        <div class="skills-icons">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3"></i>
-          <i class="fab fa-js"></i>
-          <i class="fab fa-node-js"></i>
-        </div>
-        <div class="skills-bg-text">
-          <div class="skills-bg-text-inner">
-            <p>HTML</p>
-            <p>Javascript</p>
-            <p>Git</p>
-            <p>Node.js</p>
-            <p>Vue.js</p>
-            <p>Mongoose</p>
-            <p>MongoDB</p>
-            <p>Express.js</p>
-            <p>CSS3</p>
-          </div>
-        </div>
-      </section>
+  .link {
+        background-image: linear-gradient(to right, var(--stops));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 
-      <section id="projects">
-        <h2 class="header">Projects</h2>
-      </section>
+  p {
+    font-size: 17px;
+  }
 
-      <section id="contact">
-        <h2 class="header">Get in Touch</h2>
-        <div class="contact-area">
-          <div class="hand">
-            <i class="fas fa-handshake"></i>
-            <h3>Thank You</h3>
-            <p>Want to collaborate?</p>
-          </div>
-          <form class="contact-form">
-            <label class="email">
-              <span>Email</span>
-              <input type="email" id="email" placeholder="example@gmail.com" name="email" required>
-            </label>
-            <label class="name">
-              <span>Name</span>
-              <input type="text" id="name" placeholder="John Doe" name="name" required>
-            </label>
-            <label class="message">
-              <span>Message</span>
-              <textarea id="message" placeholder="Hey there!" name="message" required></textarea>
-            </label>
-            <button disabled class="form-btn"><i class="fas fa-paper-plane"></i>&nbsp; Submit</button>
-          </form>
-        </div>
-      </section>
-    </div>
-  </div>
-  <footer>
-    <br>
-    <p>Made with ❤ by <a href="https://github.com/Mokshit06" target="_blank" rel="noopener noreferrer">Mokshit Jain</a>
-    </p>
-    <p>You can find the source code <a href="https://github.com/Mokshit06/web-portfolio" target="_blank"
-        rel="noopener noreferrer">here</a></p>
-    <br>
-  </footer>
+  h2 {
+    font-size: 1.5rem;
+  }
 
-</body>
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 
-</html>
+  .social {
+    display: flex;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  ul li {
+    margin: 8px 0;
+  }
+</style>
+
+<main>
+  <header>
+    <img src=/profile.jpg height=50 width=50 />
+    <h1>Mokshit Jain<span>, student & developer</span>
+  </header>
+  <div class=container>
+    <h2>Hey there! I'm a 16 year old developer from New Delhi, India.</h2>
+    <p>I'm Mokshit, a junior at Montfort School, Delhi, and a full-stack developer experienced in Typescript,  Javascript, Rust and frameworks like React, Solid, and Vue.
+    <p>I love to identify and develop solutions to problems around me. Recently, I have been very interested in <i>compilers</i> and areas concerning <i>web performance</i>. I'm currently working on <a class=link href=//github.com/macaron-css/macaron style="--stops:#f95997,#dc0752">Macaron</a>, a zero-runtime css-in-js library and maintaining of <a class=link href=//github.com/tanstack/table style="--stops:#14b8a6,#2563eb;">Tanstack table</a>, a headless library for building powerful tables & datagrids.
+    <p>I also like to read, and recently finished <i>Bad Blood</i> by John Carreyrou, a book about the Theranos scandal, and <i>Algorithms to Live By</i> by Brian Christian.
+    <ul>
+      <li><a href=//twitter.com/mokshit06>Twitter
+      <li><a href=mailto:mokshitjain2006@gmail.com>Email
+      <li><a href=//github.com/mokshit06>Github
+      <li><a href=//linkedin.com/in/mokshit-jain-34318018a>Linkedin
