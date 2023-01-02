@@ -86,11 +86,15 @@
     }
 
     ul {
-      list-style-type: none;
-      padding-left: 0;
       display: flex;
-      gap: 0.5rem;
+      gap: 0.3rem;
       flex-direction: column;
+    }
+
+    ul.links {
+      list-style-type: none;
+      gap: 0.4rem;
+      padding-left: 0;
     }
   </style>
 
@@ -109,7 +113,7 @@
       <p>
         I love to identify and develop solutions to problems around me.
         Recently, I have been very interested in <i>compilers</i> and areas
-        concerning <i>web performance</i>. I'm currently working on
+        concerning <i>web performance</i>. I'm currently developing
         <a
           class="link"
           href="//github.com/macaron-css/macaron"
@@ -128,11 +132,34 @@
         book about the Theranos scandal, and <i>Algorithms to Live By</i> by
         Brian Christian.
       </p>
-      <p>
-        Here is my
-        <a style="color: #2563eb" href="/Resume_Mokshit.pdf">resume</a>.
-      </p>
-      <ul>
+      <div style="margin-bottom: 1.5rem">
+        <h2>Awards</h2>
+        <ul>
+          <li>
+            Global Finalist Honorable Mention —
+            <a
+              href="https://2022.spaceappschallenge.org/challenges/2022-challenges/track-the-iss/teams/spaced-out/project"
+              >NASA Space Apps '22</a
+            >
+          </li>
+          <li>
+            Best Student Project Award —
+            <a href="https://hack.solidjs.com/prizes">SolidHack '22</a>
+          </li>
+          <li>
+            EdgeML Runners Up Prize —
+            <a href="https://hackthenorth.com/">Hack The North '21</a>
+          </li>
+          <li>
+            Drupal Global Finalist —
+            <a href="https://codein.withgoogle.com/archive/2019/"
+              >Google Code-in '19</a
+            >
+          </li>
+        </ul>
+      </div>
+      <ul class="links">
+        <li><a href="/Resume_Mokshit.pdf">Resume</a></li>
         <li><a href="mailto:mokshitjain2006@gmail.com">Email</a></li>
         <li><a href="//github.com/mokshit06">Github</a></li>
         <li><a href="//twitter.com/mokshit06">Twitter</a></li>
