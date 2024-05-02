@@ -57,6 +57,12 @@
     header {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+    }
+
+    header div {
+      display: flex;
+      align-items: center;
     }
 
     a {
@@ -110,8 +116,11 @@
   <body>
     <div class="container">
       <header>
-        <img alt="Mokshit's photo" src=/profile.jpg height=50 width=50 />
-        <h1>Mokshit Jain<span>, student & developer</span></h1>
+        <div>
+          <img alt="Mokshit's photo" src=/profile.jpg height=50 width=50 />
+          <h1>Mokshit Jain<span>, student & developer</span></h1>
+        </div>
+        <a target="_blank" href="/Resume_MokshitJain.pdf">Resume</a>
       </header>
       <h2>Hey there! I'm a 17 year old developer from New Delhi, India.</h2>
       <p>
@@ -161,6 +170,7 @@
       <div style="margin-bottom: 1.5rem">
         <h2>Awards</h2>
         <ul>
+          <li>Speedathon Winner - <a href="#">IIT Delhi Tryst '24</a></li>
           <li>
             WWDC23 Scholar -
             <a
@@ -173,7 +183,7 @@
             <a href="https://hack.sveltesociety.dev/">SvelteHack '23</a>
           </li>
           <li>
-            Global Finalist Honorable Mention —
+            Global Finalist Hon. Mention —
             <a
               href="https://2022.spaceappschallenge.org/challenges/2022-challenges/track-the-iss/teams/spaced-out/project"
               >NASA SpaceApps '22</a
@@ -198,7 +208,6 @@
       <ul class="links">
         <li><a href="//github.com/mokshit06">Github</a></li>
         <li><a href="//twitter.com/mokshit06">Twitter</a></li>
-        <li><a href="/Resume_MokshitJain.pdf">Resume</a></li>
         <li>
           <a href="//linkedin.com/in/mokshit-jain-34318018a">Linkedin</a>
         </li>
